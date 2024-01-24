@@ -1,0 +1,200 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <link rel="icon" href="pictures/clacet.png">
+
+        <meta charset=" UTF-8 "/>
+     <meta name=" description " content="this is a cinema store for booking and buying tickets "/>
+     <style>
+         body
+            {
+            
+             background-attachment: relative;
+            
+             }
+    </style>
+    </head>
+
+    
+    <!-- ربط ملف ال س ص ص بال ه ت م ل  -->
+    <link rel="stylesheet" href="css/signup.css">
+
+    
+    <body> 
+        
+        
+        <!-- نافيجيشن باار  -->
+        <nav>
+         
+         <div id="loge">
+             <div style="margin-right: 10px; margin-top: 10px;"><img id="img_logo" src="pictures/clacet.png" alt=""></div>
+             <div class="logo"><a href="index.html"><P>CINEMA</P></a></div>
+         </div>
+
+            
+            <div id="rock">
+                <!-- ليست فسها كل العناصر المفروض نحط فيها لينكات الصفحات اللى باقى التيم هيعملوها -->
+                <ul>
+
+                    <li><a href="index.html"> Home </a></li>
+                    <li><a href="Login.html"> Sign In </a></li>
+                    <li><a href="sign_up.html"> Sign Up </a></li>
+                    <li><a href=""> About </a>
+                        <ul class="drop">
+                            <li><a href=""> Contact</a></li>
+                            <li><a href=""> help </a></li>
+                        </ul>
+                    </li>
+
+                
+                
+                </ul>
+
+            </div>
+
+        </nav>
+
+       <br>
+       <br>
+
+       <!-- ديف فورم التسجيل بالكامل  -->
+        <div class="signup-form">
+            <form>
+            <h1 style="font-size: 36px;">Sign Up</h1>
+            <br>
+            <!-- ديف تقسيم الفورم اسمه content  -->
+            <div class="content">
+
+                <!-- ديف اقسيم البيانات اللى هتدخل  -->
+            <div class="input-field">
+                <input id="name" type="text" placeholder="First Name" autofocus required>
+                <input id= "name" type="text" placeholder="Last Name" required >
+            </div>
+            <br>
+
+            <!-- ديف الأيميل  -->
+            <div class="email">
+                <input id="email" type="email" placeholder="Email" autocomplete="nope"required name="email">
+                </div>
+
+
+             <!-- ديفف الباسورد  -->
+                <div class="password">
+                 <br>
+             <input type="password" placeholder="Password" autocomplete="new-password" required name="password" pattern="(?=.*\d)(?=.*[a-z]) (?=.*[A-Z])">
+               
+                    <script>
+
+                    function password() {  
+                    var pw = document.getElementById("pswd").value;  
+                    if(pw == "") {  
+                        document.getElementById("message").innerHTML = "**Fill the password please!";  
+                        return false;  
+                    }  
+                    
+                    if(pw.length < 8) {  
+                        document.getElementById("message").innerHTML = "**Password length must be atleast 8 characters";  
+                        return false;  
+                    }
+                }
+                    </script>
+                </div>
+
+
+             <!-- ديف تأكيد ان الباسورد صحيح  -->
+                <div class="Confirm-password">
+             <br>
+                <input type="password" placeholder="Confirm Password" required>
+                </div>
+             <br>
+
+
+             <!-- ديف عنوان العميل  -->
+              <div class="country">
+
+                <label for="country1" style="font-size: 20px;"> Country : </label>
+                <select name="country" id="country1">
+                    <option value="egypt">egypt</option>
+                    <option value="england">england</option>
+                    <option value="russia">russia</option>
+                    <option value="india">india</option>
+                    <option value="swedan">swedan</option>
+                    <option value="france">france</option>
+                    <option value="german">german</option>
+                    <option value="spain">spain</option selected>
+                    <option value="saudia">saudia</option>
+                    </select>
+
+                    <input type="text" name="address" placeholder="Home Address" id="add">
+
+                 </div>
+           
+                 <!-- ديف تاريخ الميلاد  -->
+                <div class="input-field">
+                <br>
+                <label for="date" style="font-size: 20px;"> Date : </label>
+                <input id="date" type="date"  name="date">
+
+                <!-- دالعمر -->
+               <label for="age" style="font-size: 20px;">Age</label>
+                <input id="age" type="number" name="age" min="16" max="120" required placeholder="Age">       
+                 </div>
+
+                <!-- ديف تحديد الجنس (ذكر و انثى )  -->
+                <div class="input-field">
+                <br>
+                <label for="gender" style="font-size: 20px;"> Gender : </label>
+                <input id="gender" type="radio" value="male" name="gender" size="20px" style="width: 17px; height: 17px;" >
+                <label for="gender" style="font-size: 20px;">Male</label>
+                <input type="radio" value="Female " name="gender" style="width: 17px; height: 17px;" >
+                <label for="gender" style="font-size: 20px;">Female</label>
+                </div>
+             <br>
+
+             <!-- ديف شيك بوكس  الموافقه على شروط الخدمه  -->
+                 <div class="chek">
+                <input id="chek" name="license" value="agreed" type="checkbox" style="width: 17px; height: 17px;" >
+                <label for="chek" style="font-size: 20px;" >agreed with our terms of sevices</label>
+                </div>
+
+             <!-- ديف ازرار التسجيل و تسجيل الدخول  -->
+                <div class="input-field">
+                <br>
+                <a href="Login.html"><button class="sn" type="button">Sign in</button></a>
+                <button type="submit" class="reg"><a href="sign_up.html">Register</a></button>
+
+                </div>
+                </form>
+                </div>
+       </div>
+     
+
+        <!-- الفوتر الرئيسى للموقع  -->
+            <footer>
+
+                <div class="right">
+                  <span style="margin-right: 10px;"><img id="img_logo" src="pictures/clacet.png" alt=""></span>
+                  <h1>CINEMA</h1>
+                 </div>
+
+             <div class="center">
+             <h2>designed by <span>cinema</span> &copy;2022 all copy right are reserved </h2>
+             </div>     
+                   
+               <div class="left">
+                    <a href="https://www.youtube.com" class="footer_link"><img class="logo1" src="pictures/youtube.png" alt="yotube"></a>
+                  
+                    <a href="https://twitter.com/" class="footer_link"><img class="logo1" src="pictures/twitter.png" alt="twitter"></a>
+                  
+                    <a href="https://www.facebook.com/" class="footer_link"><img class="logo1" src="pictures/faceboo.png" alt="facebook"></a>
+                  
+                    <a href="https://www.instagram.com/" class="footer_link"><img class="logo1" src="pictures/insta.png" alt="intagram"></a></div>
+               </div>
+
+            </footer>
+    </body>
+</html>
+
+
+       
+       

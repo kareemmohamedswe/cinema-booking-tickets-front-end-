@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="pictures/clacet.png">
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/chairs.css" />
+    <title>Movie Seat Booking</title>
+  </head>
+  <body>
+
+        <!-- نافيجيشن باار  -->
+        <nav>
+         
+            <div id="loge">
+                <div style="margin-right: 10px; margin-top: 10px;"><img id="img_logo" src="pictures/clacet.png" alt=""></div>
+                <div class="logo"><a href="index.html"><P>CINEMA</P></a></div>
+            </div>
+   
+               
+               <div id="rock">
+                   <!-- ليست فسها كل العناصر المفروض نحط فيها لينكات الصفحات اللى باقى التيم هيعملوها -->
+                   <ul>
+   
+                       <li><a href="index.html"> Home </a></li>
+                       <li><a href="Login.html"> Sign In </a></li>
+                       <li><a href="sign_up.html"> Sign Up </a></li>
+                       <li><a href=""> About </a>
+                           <ul class="drop">
+                               <li><a href=""> Contact</a></li>
+                               <li><a href=""> help </a></li>
+                           </ul>
+                       </li>
+   
+                   
+                   
+                   </ul>
+   
+               </div>
+   
+           </nav>
+
+
+
+
+    <div class="movie-container">
+
+        <br><br><br>
+        <br><br><br>
+
+
+      <label style="color:black ; "> Select a movie:</label>
+      <select id="movie" >
+        <option value="20" style="color:white ;">Doctor Strange in the Multiverse of Madness (20 $)</option>
+        <option value="20" style="color:white ">Top Gun: Maverick(20 $)</option>
+        <option value="20" style="color:white ">Jurassic World Dominion(20 $)</option>
+        <option value="20" style="color:white ">The Northman(20 $)</option>
+        <option value="20" style="color:white ">Morbius(20 $)</option>
+        <option value="20" style="color:white ">The Batman(20 $)</option>
+      </select>
+    </div>
+
+    <div id="content">
+        <ul class="showcase">
+            <li>
+              <div class="seat"></div>
+              <small>Available</small>
+            </li>
+            <li>
+              <div class="seat selected"></div>
+              <small>Selected</small>
+            </li>
+            <li>
+              <div class="seat sold"></div>
+              <small>Sold</small>
+            </li>
+          </ul>
+
+    </div>
+    
+    <div class="container">
+      <div class="screen"></div>
+    
+      <div class="row">
+        <div id ="A-1" class="seat">A-1</div>
+        <div id ="A-2" class="seat">A-2</div>
+        <div id ="A-3" class="seat">A-3</div>
+        <div id ="A-4" class="seat">A-4</div>
+        <div id ="A-5" class="seat">A-5</div>
+        <div id ="A-6" class="seat">A-6</div>
+        <div id ="A-7" class="seat">A-7</div>
+        <div id ="A-8" class="seat">A-8</div>
+      </div>
+      <div class="row">
+        <div  id ="B-1" class="seat">B-1</div>
+        <div  id ="B-2" class="seat">B-2</div>
+        <div  id ="B-3" class="seat">B-3</div>
+        <div  id ="B-4" class="seat">B-4</div>
+        <div  id ="B-5" class="seat">B-5</div>
+        <div  id ="B-6" class="seat">B-6</div>
+        <div  id ="B-7" class="seat">B-7</div>
+        <div  id ="B-8" class="seat">B-8</div>
+      </div>
+      <div class="row">
+        <div  id ="C-1" class="seat">C-1</div>
+        <div  id ="C-2" class="seat">C-2</div>
+        <div  id ="C-3" class="seat">C-3</div>
+        <div  id ="C-4" class="seat">C-4</div>
+        <div  id ="C-5" class="seat">C-5</div>
+        <div  id ="C-6" class="seat">C-6</div>
+        <div  id ="C-7" class="seat">C-7</div>
+        <div  id ="C-8" class="seat">C-8</div>
+      </div>
+      <div class="row">
+        <div  id ="D-1" class="seat">D-1</div>
+        <div  id ="D-2" class="seat">D-2</div>
+        <div  id ="D-3" class="seat">D-3</div>
+        <div  id ="D-4" class="seat">D-4</div>
+        <div  id ="D-5" class="seat">D-5</div>
+        <div  id ="D-6" class="seat">D-6</div>
+        <div  id ="D-7" class="seat">D-7</div>
+        <div  id ="D-8" class="seat">D-8</div>
+      </div>
+      <div class="row">
+        <div  id ="E-1" class="seat">E-1</div>
+        <div  id ="E-2" class="seat">E-2</div>
+        <div  id ="E-3" class="seat">E-3</div>
+        <div  id ="E-4" class="seat">E-4</div>
+        <div  id ="E-5" class="seat">E-5</div>
+        <div  id ="E-6" class="seat">E-6</div>
+        <div  id ="E-7" class="seat">E-7</div>
+        <div  id ="E-8" class="seat">E-8</div>
+      </div>
+      <div class="row">
+        <div  id ="F-1" class="seat">F-1</div>
+        <div  id ="F-2" class="seat">F-2</div>
+        <div  id ="F-3" class="seat">F-3</div>
+        <div  id ="F-4" class="seat">F-4</div>
+        <div  id ="F-5" class="seat">F-5</div>
+        <div  id ="F-6" class="seat">F-6</div>
+        <div  id ="F-7" class="seat">F-7</div>
+        <div  id ="F-8" class="seat">F-8</div>
+      </div>
+      <div class="row">
+        <div  id ="G-1" class="seat">G-1</div>
+        <div  id ="G-2" class="seat">G-2</div>
+        <div  id ="G-3" class="seat">G-3</div>
+        <div  id ="G-4" class="seat">G-4</div>
+        <div  id ="G-5" class="seat">G-5</div>
+        <div  id ="G-6" class="seat">G-6</div>
+        <div  id ="G-7" class="seat">G-7</div>
+        <div  id ="G-8" class="seat">G-8</div>
+      </div>
+      <br><br><br><br><br><br>
+
+    <div class="row">
+        <div  id ="H-1" class="seat">H-1</div>
+        <div  id ="H-2" class="seat">H-2</div>
+        <div  id ="H-3" class="seat">H-3</div>
+        <div  id ="H-4" class="seat">H-4</div>
+        <div  id ="H-5" class="seat">H-5</div>
+        <div  id ="H-6" class="seat">H-6</div>
+        <div  id ="H-7" class="seat">H-7</div>
+        <div  id ="H-8" class="seat">H-8</div>
+    </div>
+    <div class="row">
+        <div  id ="I-1" class="seat">I-1</div>
+        <div  id ="I-2" class="seat">I-2</div>
+        <div  id ="I-3" class="seat">I-3</div>
+        <div  id ="I-4" class="seat">I-4</div>
+        <div  id ="I-5" class="seat">I-5</div>
+        <div  id ="I-6" class="seat">I-6</div>
+        <div  id ="I-7" class="seat">I-7</div>
+        <div  id ="I-8" class="seat">I-8</div>
+    </div>
+    <div class="row">
+      <div  id ="J-1" class="seat">J-1</div>
+      <div  id ="J-2" class="seat">J-2</div>
+      <div  id ="J-3" class="seat">J-3</div>
+      <div  id ="J-4" class="seat">J-4</div>
+      <div  id ="J-5" class="seat">J-5</div>
+      <div  id ="J-6" class="seat">J-6</div>
+      <div  id ="J-7" class="seat">J-7</div>
+      <div  id ="J-8" class="seat">J-8</div>
+    </div>
+    <div class="row">
+        <div  id ="K-1" class="seat">K-1</div>
+        <div  id ="K-2" class="seat">K-2</div>
+        <div  id ="K-3" class="seat">K-3</div>
+        <div  id ="K-4" class="seat">K-4</div>
+        <div  id ="K-5" class="seat">K-5</div>
+        <div  id ="K-6" class="seat">K-6</div>
+        <div  id ="K-7" class="seat">K-7</div>
+        <div  id ="K-8" class="seat">K-8</div>
+    </div>
+    <div class="row">
+        <div  id ="L-1" class="seat">L-1</div>
+        <div  id ="L-2" class="seat">L-2</div>
+        <div  id ="L-3" class="seat">L-3</div>
+        <div  id ="L-4" class="seat">L-4</div>
+        <div  id ="L-5" class="seat">L-5</div>
+        <div  id ="L-6" class="seat">L-6</div>
+        <div  id ="L-7" class="seat">L-7</div>
+        <div  id ="L-8" class="seat">L-8</div>
+    </div>
+    <div class="row">
+        <div  id ="M-1" class="seat">M-1</div>
+        <div  id ="M-2" class="seat">M-2</div>
+        <div  id ="M-3" class="seat">M-3</div>
+        <div  id ="M-4" class="seat">M-4</div>
+        <div  id ="M-5" class="seat">M-5</div>
+        <div  id ="M-6" class="seat">M-6</div>
+        <div  id ="M-7" class="seat">M-7</div>
+        <div  id ="M-8" class="seat">M-8</div>
+    </div>
+    <div class="row">
+        <div  id ="N-1" class="seat">N-1</div>
+        <div  id ="N-2" class="seat">N-2</div>
+        <div  id ="N-3" class="seat">N-3</div>
+        <div  id ="N-4" class="seat">N-4</div>
+        <div  id ="N-5" class="seat">N-5</div>
+        <div  id ="N-6" class="seat">N-6</div>
+        <div  id ="N-7" class="seat">N-7</div>
+        <div  id ="N-8" class="seat">N-8</div>
+    </div>
+    <div class="row">
+        <div  id ="O-1" class="seat">O-1</div>
+        <div  id ="O-2" class="seat">O-2</div>
+        <div  id ="O-3" class="seat">O-3</div>
+        <div  id ="O-4" class="seat">O-4</div>
+        <div  id ="O-5" class="seat">O-5</div>
+        <div  id ="O-6" class="seat">O-6</div>
+        <div  id ="O-7" class="seat">O-7</div>
+        <div  id ="O-8" class="seat">O-8</div>
+    </div>
+  </div>
+
+    <p class="text">
+      You have selected <span id="count">0</span> seat for a price of dollars.<span id="total">0</span>
+      <a href="payment.html"><button type="button" class="in">NEXT</button></a> 
+    </p>
+  
+          
+
+    
+    
+ 
+    <script src="java/chairs.js"></script>
+
+
+            <!-- الفوتر الرئيسى للموقع  -->
+            <footer>
+
+                <div class="right">
+                  <span style="margin-right: 10px;"><img id="img_logo" src="pictures/clacet.png" alt=""></span>
+                  <h1>CINEMA</h1>
+                 </div>
+
+             <div class="center">
+             <h2>designed by <span>cinema</span> &copy;2022 all copy right are reserved </h2>
+             </div>     
+                   
+               <div class="left">
+                    <a href="https://www.youtube.com" class="footer_link"><img class="logo1" src="pictures/youtube.png" alt="yotube"></a>
+                  
+                    <a href="https://twitter.com/" class="footer_link"><img class="logo1" src="pictures/twitter.png" alt="twitter"></a>
+                  
+                    <a href="https://www.facebook.com/" class="footer_link"><img class="logo1" src="pictures/faceboo.png" alt="facebook"></a>
+                  
+                    <a href="https://www.instagram.com/" class="footer_link"><img class="logo1" src="pictures/insta.png" alt="intagram"></a></div>
+               </div>
+
+            </footer>
+  </body>
+</html>
+     
